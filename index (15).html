@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- iOS Video Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <title>Aabha - Inspired by Nature</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="styles/style.css" rel="stylesheet">
+  <link rel="icon" href="/public/favicon.ico">
+</head>
+
+
+
+<body>
+
+  <div class="main_div">
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader-content">
+        <!-- LOGO -->
+        <div class="preloader-logo">
+          <img src="assets/aabha-logo-transparent.png" alt="Aabha Logo" class="logo-image">
+        </div>
+        <div class="preloader-text">Aabha<span class="welcome-text">welcomes you</span></div>
+        <div class="loading-track">
+          <div class="loading-fill"></div>
+          <div class="loading-leaf">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.24 12.24c-2.48 4.67-7.79 6.27-10.45 6.47-.27.02-.27.02-.38.27l-.61 1.48a.49.49 0 0 1-.9.08.49.49 0 0 1-.02-.12l.47-2.61c-1.84-.71-3.62-2.38-3.03-5.22.42-2.01 2.22-3.12 2.22-3.12s-1.81.9-2.09 3.03c-.22 1.69 1.44 2.87 2.06 3.2L7 12.87c.21-1.35 1.04-4.83 5.46-7.39 3.79-2.2 8.63-2.15 8.63-2.15s-1.12 3.61-4.99 5.86c-4.43 2.58-5.32 6.13-5.36 6.32 1.95.03 6.94-1.25 9.1-5.11.08-.15.26-.2.41-.12.15.08.2.26.12.41l-.13.26z"
+                fill="currentColor" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Global Overlay Elements -->
+    <div class="grain-overlay"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <nav class="main-nav fade-in-section">
+        <div class="nav-links">
+          <a href="about/index.html">
+            <span class="navtext">About Us</span>
+          </a>
+          <a href="products/index.html">
+            <span class="navtext">Shop</span>
+          </a>
+          <a href="blog/index.html">
+            <span class="navtext">Journal</span>
+          </a>
+          <a href="contact/index.html">
+            <span class="navtext">Contact Us</span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- VIDEO WITH LOGO FALLBACK -->
+      <video id="hero-video" class="back-video" autoplay muted loop playsinline webkit-playsinline preload="auto">
+        <source src="Free_Waterfall_4k_Videoclip_Nature_Videos_Youstock_1440P.mp4" type="video/mp4">
+      </video>
+
+      <!-- FALLBACK: Logo background (hidden by default, shown if video fails) -->
+      <div class="hero-bg-fallback"></div>
+
+      <div class="hero-bg"></div>
+      <div class="hero-year"></div>
+      <div class="hero-content">
+        <h1 class="brand-name">
+          <span class="start-word"></span>
+          <span class="typing-brand">Aabha</span>
+        </h1>
+        <span class="brand-tagline">- Inspired by nature</span>
+        <div class="hero-actions">
+          <a href="#products" class="cta-button primary">Explore Collection</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Brand Introduction -->
+    <section id="about" class="section about-section">
+      <div class="container about-layout">
+        <div class="about-title-wrapper">
+          <h2 class="section-title">Pure.<br>Ethical.<br>Radiant.</h2>
+        </div>
+        <div class="about-text fade-in-section">
+          <p>
+            We believe skincare should be a ritual, not a routine.
+            Born from the earth, Aabha Naturals combines ancient botanical wisdom with modern purity.
+          </p>
+          <br>
+          <p>
+            No synthetics. No compromises. Just raw, effective nature bottled for your glow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <span>Organic &nbsp;•&nbsp; Purity &nbsp;•&nbsp; Radiance &nbsp;•&nbsp; Nature &nbsp;•&nbsp; Glow &nbsp;•&nbsp;
+          Sustainable &nbsp;•&nbsp; Ethical &nbsp;•&nbsp;</span>
+        <span>Organic &nbsp;•&nbsp; Purity &nbsp;•&nbsp; Radiance &nbsp;•&nbsp; Nature &nbsp;•&nbsp; Glow &nbsp;•&nbsp;
+          Sustainable &nbsp;•&nbsp; Ethical &nbsp;•&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <section id="products" class="section products-section">
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <article class="product-card fade-in-section">
+          <div class="product-image">
+            <img src="assets/Gemini_Generated_Image_p94y7lp94y7lp94y (1).png" alt="Radiant Face Wash"
+              class="placeholder-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">RoseMarry Hair Toner</h3>
+            <p class="product-desc">RoseMarry & Tea Tree</p>
+            <span class="product-price"></span>
+            <button class="add-to-cart"><a
+                href="https://wa.me/+919974358866?text=Hi!%20I'm%20interested%20in%20the%20RoseMarry%20Hair%20Toner">Shop
+                Now</a></button>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card fade-in-section">
+          <div class="product-image">
+            <img src="assets/walnut scrub.png" alt="Botanical Shampoo" class="placeholder-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Walnut Scrub</h3>
+            <p class="product-desc">Walnut & Apricot</p>
+            <span class="product-price"></span>
+            <button class="add-to-cart"><a
+                href="https://wa.me/+919974358866?text=Hi!%20I'm%20interested%20in%20the%20Walnut%20Scrub">Shop
+                Now</a></button>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card fade-in-section">
+          <div class="product-image">
+            <img src="assets/saffron gel.png" alt="Velvet Body Lotion" class="placeholder-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Saffron Gel</h3>
+            <p class="product-desc">Saffron & Rosehip</p>
+            <span class="product-price"></span>
+            <button class="add-to-cart"><a
+                href="https://wa.me/+919974358866?text=Hi!%20I'm%20interested%20in%20the%20Saffron%20Gel">Shop
+                Now</a></button>
+          </div>
+        </article>
+      </div>
+
+      <a href="products/index.html" class="view-more">View More</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Aabha Naturals</h3>
+            <p>Nature's best kept secret.</p>
+          </div>
+          <div class="footer-links">
+            <a href="products/index.html">Shop</a>
+            <a href="about/index.html">About</a>
+            <a href="blog/index.html">Journal</a>
+            <a href="contact/index.html">Contact</a>
+          </div>
+          <div class="footer-social">
+            <span>Instagram</span>
+            <span>Facebook</span>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Aabha Naturals. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Smart Video with Logo Fallback -->
+  <script>
+    (function () {
+      const video = document.getElementById('hero-video');
+      const fallback = document.querySelector('.hero-bg-fallback');
+
+      if (!video || !fallback) return;
+
+      let videoPlaying = false;
+
+      // Function to show fallback
+      function showFallback() {
+        if (!videoPlaying) {
+          video.style.display = 'none';
+          fallback.style.display = 'block';
+          console.log('→ Showing logo fallback');
+        }
+      }
+
+      // Function to show video
+      function showVideo() {
+        videoPlaying = true;
+        video.style.display = 'block';
+        fallback.style.display = 'none';
+        console.log('✓ Showing video');
+      }
+
+      // Force muted and inline for iOS
+      video.muted = true;
+      video.playsInline = true;
+      video.volume = 0;
+      video.setAttribute('playsinline', '');
+      video.setAttribute('webkit-playsinline', '');
+
+      // Immediate check: if video not ready, show fallback right away
+      if (video.readyState < 2) {
+        showFallback();
+      }
+
+      // Try to play video
+      const playPromise = video.play();
+
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            showVideo();
+          })
+          .catch(error => {
+            console.log('✗ Video blocked:', error.message);
+            showFallback();
+
+            // Try playing on user interaction
+            const tryPlay = () => {
+              video.play().then(() => {
+                showVideo();
+              }).catch(() => {
+                // Keep fallback
+              });
+            };
+
+            document.addEventListener('touchstart', tryPlay, { once: true, passive: true });
+            document.addEventListener('click', tryPlay, { once: true });
+          });
+      } else {
+        // No play promise support (old browser)
+        showFallback();
+      }
+
+      // Safety check: After 1.5 seconds, if video not playing, show fallback
+      setTimeout(() => {
+        if (video.paused || video.readyState < 2) {
+          showFallback();
+        }
+      }, 1500);
+
+      // Monitor video events
+      video.addEventListener('playing', () => {
+        showVideo();
+      });
+
+      video.addEventListener('error', () => {
+        console.log('✗ Video error');
+        showFallback();
+      });
+
+      video.addEventListener('stalled', () => {
+        console.log('⚠ Video stalled');
+        showFallback();
+      });
+
+    })();
+  </script>
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>

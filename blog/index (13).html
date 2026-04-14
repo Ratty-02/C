@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal | Aabha Naturals</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #2d5244 0%, #1a3a2e 100%);
+            color: #E2E2E2;
+            min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; pb-40px; }
+        header { padding: 40px 0; text-align: center; }
+        .nav-links { display: flex; justify-content: center; gap: 30px; margin-bottom: 20px; }
+        .nav-links a { color: #d4af37; text-decoration: none; font-size: 1rem; letter-spacing: 2px; text-transform: uppercase; transition: color 0.3s; }
+        .nav-links a:hover { color: #F9F7F2; }
+        h1 { color: #d4af37; font-size: 3.5rem; font-weight: 300; letter-spacing: 3px; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); animation: fadeInDown 0.8s ease-out; }
+        .subtitle { color: #c9d6c4; font-size: 1.2rem; font-style: italic; margin-bottom: 50px; animation: fadeInDown 1s ease-out; }
+        
+        .blog-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 40px; margin-bottom: 80px;
+        }
+        .article-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            animation: fadeInUp 0.8s ease-out;
+            text-decoration: none; display: block;
+        }
+        .article-card:hover { transform: translateY(-10px); box-shadow: 0 15px 50px rgba(212, 175, 55, 0.3); }
+        .article-image {
+            width: 100%; height: 250px; object-fit: cover;
+            border-bottom: 2px solid #d4af37;
+        }
+        .article-content { padding: 30px; }
+        .article-category { color: #d4af37; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; font-weight: bold; }
+        .article-title { color: #1a3a2e; font-size: 1.6rem; margin-bottom: 15px; font-weight: 600; line-height: 1.3; }
+        .article-excerpt { color: #5a7a67; font-size: 1rem; margin-bottom: 20px; line-height: 1.5; }
+        .article-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; padding-top: 15px; }
+        .read-more { color: #2d5244; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; }
+        .article-card:hover .read-more { color: #d4af37; }
+        .article-date { color: #888; font-size: 0.85rem; font-style: italic; }
+
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 768px) { .blog-grid { grid-template-columns: 1fr; } h1 { font-size: 2.5rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../about/index.html">About</a>
+                <a href="../products/index.html">Products</a>
+                <a href="../contact/index.html">Contact</a>
+            </nav>
+            <h1>The Botanical Journal</h1>
+            <p class="subtitle">Wisdom for your skin, directly from nature's source.</p>
+        </header>
+
+        <div class="blog-grid">
+            <a href="#" class="article-card">
+                <div class="article-image" style="background: linear-gradient(45deg, #1a3a2e, #d4af37);"></div>
+                <div class="article-content">
+                    <div class="article-category">Ingredients Spotlight</div>
+                    <h2 class="article-title">The Miraculous Benefits of Saffron for Skin Illumination</h2>
+                    <p class="article-excerpt">Known as red gold, saffron has been a staple in Ayurvedic skincare for centuries. Discover how it brightens and tightens your skin naturally.</p>
+                    <div class="article-footer">
+                        <span class="read-more">Read Article →</span>
+                        <span class="article-date">Oct 12, 2026</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#" class="article-card">
+                <div class="article-image" style="background: linear-gradient(45deg, #2d5244, #7CFC00);"></div>
+                <div class="article-content">
+                    <div class="article-category">Rituals</div>
+                    <h2 class="article-title">Building a Minimalist Skincare Routine with Maximum Impact</h2>
+                    <p class="article-excerpt">Why using fewer, high-quality botanical products can sometimes give you better results than a complex 10-step chemical routine.</p>
+                    <div class="article-footer">
+                        <span class="read-more">Read Article →</span>
+                        <span class="article-date">Sep 28, 2026</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="article-card">
+                <div class="article-image" style="background: linear-gradient(45deg, #05110A, #d4af37);"></div>
+                <div class="article-content">
+                    <div class="article-category">Sustainability</div>
+                    <h2 class="article-title">Why Ethical Botanical Sourcing Matters to Us (and You)</h2>
+                    <p class="article-excerpt">Take a behind-the-scenes look at how Aabha Naturals partners with local farmers to ensure ingredients are pure and communities thrive.</p>
+                    <div class="article-footer">
+                        <span class="read-more">Read Article →</span>
+                        <span class="article-date">Sep 15, 2026</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
